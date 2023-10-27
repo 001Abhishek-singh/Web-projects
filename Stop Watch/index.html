@@ -1,0 +1,21 @@
+<!-- (05/09/2023) in this session we are going to create a stop watch by using the html,css & javascript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sheet.js" defer></script>
+</head>
+<body>
+    <div class="stopwatch">
+        <h1 id="displaytime">00:00:00</h1>
+        <div class="myallbuttons">
+            <img onclick="watchStop()" src="stop.png" alt="stop">
+            <img onclick="watchStart()" src="play.png" alt="play">
+            <img onclick="watchReset()" src="reset.png" alt="reset">
+        </div>
+    </div>
+</body>
+</html>

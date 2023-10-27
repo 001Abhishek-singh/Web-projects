@@ -1,0 +1,18 @@
+/* (11/09/23) in this session we are going to create a Website Dark Mode by using html,css & javascript. */
+body{
+    /* background: var(--primary-color); */
+    background: var(--secondary-color);
+}
+#sun-picture{
+    width: 30px;
+    cursor: pointer;
+}
+/* now we are creating a Css Variable for background color changing */
+:root{
+    --primary-color:#987634;;
+    --secondary-color:white;  /* this is a css variable once when we declare we just need to utilize it effectively */
+}
+.my-theme{
+    --primary-color:rgb(239, 82, 108);
+    --secondary-color:black;
+}

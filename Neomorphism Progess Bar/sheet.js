@@ -1,0 +1,1 @@
+// (29/09/23) In this session we are going to create a progress bar by using the html,css & javascript.

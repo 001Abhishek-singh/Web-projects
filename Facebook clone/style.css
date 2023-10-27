@@ -1,0 +1,412 @@
+/* Every html elements will be follow this style*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#bgcolor{
+    background-color: antiquewhite;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(84, 84, 236);
+    padding: 5px;
+    position: sticky;/* for fixing the position of any content on the web page we will use 'sticky' as a position element*/
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    width: 140px;
+    background: aquamarine;
+}
+
+.navleft,.navright{
+    display: flex;
+    align-items: center;
+}
+.navleft ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navleft ul li img{
+    width: 30px;
+    margin: 10px;
+}
+
+.search-box{
+    background: rgb(247, 238, 238);
+    border-radius: 20px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 4px 20px;
+    margin: 0px 5px 0px 0px;
+}
+#forsearch{
+    width: 100%;
+    padding:6px;
+    border: 4px;
+    outline:none ;
+}
+#forsubmit{
+    display: flex;
+    width: 40%;
+    background: rgb(223, 218, 231);
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.user-profile img{
+    width: 50px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width:7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top: 0px;
+    right:0px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between; /* what is justify content */
+    padding: 10px 5%;
+}
+.left-sidebar{
+    background: cornsilk;
+    flex-basis: 25%;
+    position:sticky;
+    top: 70px;                 /* what is position,align-content,flex-basis */
+    align-self: flex-start;
+    height: 100vh;
+}
+.right-sidebar{
+    background: cornsilk;
+    flex-basis: 25%;
+    position:sticky;
+    top: 70px;
+    align-self: flex-start;
+    padding: 16px;
+    border-radius: 6px;
+    color: black;
+}
+.main-content{
+    flex-basis: 50%;
+}
+.impo-links a{                 /* css designing for impo-links under left-sidebar */ 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: blueviolet;
+    width: fit-content;
+}
+.impo-links a img{
+    width: 25px;
+    margin-right: 15px;
+}
+.impo-links a:last-child{ 
+    color: black;
+}
+
+.shortcut-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: black;
+    width: fit-content;
+}
+.shortcut-links a img{
+    width: 30px;
+    margin-right: 15px;
+}
+p{
+    margin: 15px 0px 15px 0px;
+    font-size: large;
+    color: black;
+}
+.sidebar-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.sidebar-title h4{
+    font-weight: 500;
+    font-size: 16px;
+}
+.sidebar-title a{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+.event{
+    /*display: flex;*/
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+.next-left-event, .new-left-event{
+    border-radius: 10px;
+    height: 55px;
+    width: 55px;
+    margin-top: 12px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.event .next-right-event h4{
+    font-size: 14px;
+    color:crimson;
+}
+.event .next-right-event p{
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+}
+.event .next-right-event a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.event .next-left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(49, 49, 204);
+    color: white;
+    font-size: 14px;
+    padding: 4px 0px;
+}
+.event .new-right-event h4{
+    font-size: 14px;
+    color:crimson;
+}
+.event .new-right-event p{
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+}
+.event .new-right-event a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.event .new-left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(49, 49, 204);
+    color: white;
+    font-size: 14px;
+    padding: 4px 0px;
+}
+.event hr{
+    border: groove;
+}
+#divider{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: dotted;
+}
+#line{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border:double;
+}
+.right-side-ads{
+    width: 70%;
+    margin-left: 40px;
+    margin-bottom:10px;
+    border-radius: 4px;
+
+}
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.online-list .online img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.online-list .online {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.online-list .online::after{
+    top: unset;
+    bottom: 5px;
+}
+/*#upload-icon{
+    width: 35px;
+}*/
+.story-gallery{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.story{
+    flex-basis: 18%;/*what is a flex basis,try to understand it*/
+    padding-top: 32%;
+    position: relative;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)), url(abhishek.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.story img{
+    position:absolute;
+    width: 30px;
+    border-radius: 60%;
+    top: 8px;
+    left: 8px;
+    border: 3px solid blue;
+}
+.story p{
+    position:absolute;
+    bottom: -12px;
+    width: 100%;
+    text-align:center;
+    color:white;
+    font-size: 12px;
+    
+}
+.story1{
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)), url(coder.jpeg);
+}
+.story2{
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)), url(anonymous.jpeg);
+}
+.story3{
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)), url(gju.jpeg);
+}
+.story4{
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)), url(racer.jpeg);
+}
+.write-post-container{
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #615371;
+}
+.new-post-user-profile{
+    display: flex;
+    align-items: center;
+}
+.new-post-user-profile img{
+    width: 11%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.new-post-user-profile p{
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: rgb(235, 96, 11);
+    font-size: large;
+}
+.new-post-user-profile small{
+    margin-bottom: -40px;
+    margin-left: -87px;
+    font-size: 15px;
+}
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+.post-input-container textarea{
+    width: 95%;
+    border: 0;
+    outline: 0;
+    border-bottom:2px solid firebrick;
+    background:transparent;
+    resize: none;
+}
+.add-post-links{
+     display: flex;
+     margin-top: 10px;
+}
+.add-post-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    font-size: 14px;
+}
+.add-post-links a img{
+    width: 25px;
+    margin-right: 12px;
+}
+
+.post-container{
+    width: 100%;
+    background:whitesmoke;
+    border-radius: 6px;
+    padding: 20px;
+    color: rgb(223, 215, 206);
+    margin: 15px 0px;
+}
+.new-post-user-profile span{
+    color: black;
+    margin-bottom: -40px;
+    margin-left: -87px;
+    font-size: 13px;
+}
+.post-container-post-div{
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.post-container-post-div-image{
+    width: 75%;
+    margin-top: 4px;
+    margin-left: 10%;
+    border-radius: 4px;
+}
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.activity-icons div img{
+    width: 28px;
+    margin-right: 13px;
+    margin-left: 65px;
+    margin-top:0px;
+}
+.activity-icons div{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+    color: black;
+}
+.post-container .new-post-user-profile a img{
+    margin-left: 390px;
+    width: 22px;
+    height: 20px;
+}

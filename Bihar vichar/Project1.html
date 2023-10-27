@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Html learning</title>
+
+    <!----------- css style -------->
+    <link rel="stylesheet" href="project1.css">
+
+    <!------------ bootstrap css style ------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body style="background-color: wheat;">
+    <!--------------- Header section --------------->
+    <header>
+        <section class="headersection">
+            <nav class="navbar navbar-expand-lg bg-secondary">
+                <div class="container-fluid bg-warning">
+                  <!-- <a class="navbar-brand" href="#"></a> -->
+                  <img src="abhishek.png" width="90px" height="90px" alt="Bihar Vichar">
+                  <!-- <h1>Bihar Vichar Samaj</h1> -->
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li><!--ye navbar pe button ke jaise hoga jo is baat ko indicate karega ki ye home page hai aur ham apne other page se home page pe wapas chale jaye isliye "url likhna hai".-->
+
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Governance</a></li><!--ye navbar pe button ke jaise hoga jo is baat ko indicate karega ki ye governance page hai aur ham apne other page se governace page pe wapas chale jaye isliye "url likhna hai".-->
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Tourism</a></li><!--ye navbar pe button ke jaise hoga jo is baat ko indicate karega ki ye tourism page hai aur ham apne other page se tourism page pe wapas chale jaye isliye "url likhna hai".-->
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Rituals</a></li><!--ye navbar pe button ke jaise hoga jo is baat ko indicate karega ki ye rituals page hai aur ham apne other page se rituals page pe wapas chale jaye isliye "url likhna hai".-->
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About Perspective</a></li><!--ye navbar pe button ke jaise hoga jo is baat ko indicate karega ki ye About perspective page hai aur ham apne other page se perspective page pe wapas chale jaye isliye "url likhna hai" yaha blogging content ke liye page create karna hai-->
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">History</a><!--ye navbar pe button ke jaise show hoga(javascript ke click property ke through list ke saath open hoga) or ye sabhi page par rahega and yaha pe "url nahi likhna hai just click property"-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Origin of Bihar</a></li>
+                            <li><hr class="dropdown-divider"></li><!-- url likhna hai-->
+
+                            <li><a class="dropdown-item" href="#">During Vedic period</a></li>
+                            <li><hr class="dropdown-divider"></li>  <!-- url likhna hai-->
+
+                            <li class="nav-item dropdown">
+                                <div>
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">During Invasion of India</a>
+                                        <!--yaha pe javascript ka click property use karna hai isliye "url mat likhna" and ye other pages pe bhi rahega.-->
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">By Aryan Invasion</a></li> 
+                                        <li><hr class="dropdown-divider"></li><!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Persian Invasion</a></li> 
+                                        <li><hr class="dropdown-divider"></li> <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Greek Invasion</a></li>
+                                        <li><hr class="dropdown-divider"></li>    <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Seleucid Invasion</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Greek-Indo Invasion</a></li>
+                                        <li><hr class="dropdown-divider"></li>  <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Huna invasion</a></li>
+                                        <li><hr class="dropdown-divider"></li>     <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Arab invasion</a></li>
+                                        <li><hr class="dropdown-divider"></li>    <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Turkish Invasion</a></li>
+                                        <li><hr class="dropdown-divider"></li>   <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Mongol Invasion</a></li>
+                                        <li><hr class="dropdown-divider"></li>    <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By Mughal Invasion</a></li>
+                                        <li><hr class="dropdown-divider"></li>   <!-- url likhna hai-->
+
+                                        <li><a class="dropdown-item" href="#">By European & British Invasion</a></li>  <!-- url likhna hai-->
+
+                                    </ul>
+                                </div>
+                                
+                                
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">During British Empire</a></li> 
+                            <li><hr class="dropdown-divider"></li>  <!-- url likhna hai-->
+
+                            <li><a class="dropdown-item" href="#">After Independence</a></li>  
+                            <li><hr class="dropdown-divider"></li>      <!-- url likhna hai-->
+
+                            <li><a class="dropdown-item" href="#">After Partition in 2000</a></li> 
+                            <li><hr class="dropdown-divider"></li>  <!-- url likhna hai-->
+                            
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">others</a><!--yaha pe javascript ka click property use karna hai isliye "url mat likhna" and ye other pages pe bhi rahega.-->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Legislative Assembly</a></li><hr class="dropdown-divider">   <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Population</a></li><hr class="dropdown-divider">        <!-- url likhna hai-->
+                                     
+                                    <li><a class="dropdown-item" href="#">Languages</a></li> <hr class="dropdown-divider">              <!-- url likhna hai--> 
+
+                                    <li><a class="dropdown-item" href="#">District</a></li><hr class="dropdown-divider">        <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Capital income</a></li><hr class="dropdown-divider">  <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Poverty index</a></li><hr class="dropdown-divider">     <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">GDP contribution</a></li><hr class="dropdown-divider">     <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Employment rate</a></li> <hr class="dropdown-divider">      <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Growth rate</a></li><hr class="dropdown-divider">     <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Birth rate</a></li><hr class="dropdown-divider">     <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Death rate</a></li><hr class="dropdown-divider">       <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Main Occupation</a></li> <hr class="dropdown-divider">     <!-- url likhna hai-->
+
+                                    <li><a class="dropdown-item" href="#">Why migration occur</a></li> <hr class="dropdown-divider">    <!-- url likhna hai-->
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+                </div>
+            </nav>
+
+
+<!------------------------------- sliding images -------------------------->
+
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div id="img1" class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pic1.jpeg" class="d-block w-100 img-fluid" alt="pic1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div id="img2" class="carousel-item">
+        <img src="rajgir.jpeg" class="d-block w-100 img-fluid" alt="rajgir">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div id="img3" class="carousel-item">
+        <img src="nalanda.jpeg" class="d-block w-100 img-fluid" alt="nalanda">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div id="img4" class="carousel-item">
+        <img src="village.jpg" class="d-block w-100 img-fluid" alt="village">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div id="img5" class="carousel-item">
+        <img src="painting.jpeg" class="d-block w-100 img-fluid" alt="painting">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    </section>
+</header>
+
+<!------------------------------------------ Main section ----------------------------------------------->
+ 
+    <main class="formain">
+        <section class="mainsection">
+            <div class="formain">
+                <!-- style me url ka use kar ke background image lagana hai -->
+                <h3>BIHAR The Pride of India</h3>
+                <h4>The origin of Governance,democracy,political debates,philosiphical debates the contributor of 0 to
+                    the world and many other essential goods because we are seeing today.</h4>
+                <button>Past Glories</button>
+            </div>
+        </section>
+        <hr>
+<!------------------------------------------ Footer section ----------------------------------------------->
+        <footer class="forfooter">
+            <section class="footersection">
+
+<!---------------- link & text in footer -------------->
+                <div class="container-fluid">
+                    <div class="row justify-content-evenly pt-5 pb-5">
+                        <div class="col-md-2 mt-3"><a id="forblog" href="#"><h3>Blog</h3></a></div>
+
+                        <div class="col-md-2 mt-3"><a id="fornews" href="#" style="text-decoration: none;"><h3>News</h3></a></div>
+
+                        <div class="col-md-2 mt-3"><a id="forhelp" href="#" style="text-decoration: none;"><h3>Help</h3></a></div>
+
+                        <div class="col-md-2 mt-3"><a id="forcontact" href="#" style="text-decoration: none;"><h3>Contact</h3></a></div>
+                    </div>
+                    <div class="row justify-content-evenly pb-4">
+                        <div class="col-md-8 text-center pb-2"><p><h5>Hello bihar vasi mujhe ye batate hue bahut khushi ho rahi hai ki aaj maine apna webpage banane ki koshi suru kar di hai jisme na jane kitne din lagenge isse puri tarah sikhne aur ek achhe web developer banne me so isliye agar aap is page ko padh rahe hai to is page me dikhne wali kahmiyo ko jarur btaye taki isko aur bhi achha banya ja sake.</h5></p></div>
+                    </div>
+
+<!--------------- social media icon ----------------->
+                    <div class="row  justify-content-center pb-4">
+                        <div class="col-2 col-md-1">
+                            <a href="#"><h1><i class="bi bi-facebook" style="color: mediumblue"></i></h1></a>
+                        </div>
+                        <div class="col-2 col-md-1">
+                            <a href="#"><h1><i class="bi bi-twitter" style="color: dodgerblue;"></i></h1></a>
+                        </div>
+                        <div class="col-2 col-md-1">
+                            <a href="#"><h1><i class="bi bi-envelope-at-fill" style="color: white;"></i></h1></a>
+                        </div>
+                        <div class="col-2 col-md-1">
+                            <a href="#"><h1><i class="bi bi-linkedin" style="color: blue;"></i></h1></a>
+                        </div>
+                        <div class="col-2 col-md-1">
+                            <a href="#"><h1><i class="bi bi-instagram" style="color:rgb(251, 57, 88)"></i></h1></a>
+                        </div>
+                        <div class="col-2 col-md-1">
+                            <a href="#"><h1><i class="bi bi-youtube" style="color: red;"></i></h1></a>
+                        </div>
+                    </div>
+
+<!----------- copyright section ------------>
+                    <div class="row text-center">
+                        <div class="col-12 mb-1"><h6><i class="bi bi-c-circle"></i>2023 Copyright: Kavaagroup.com</h6></div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>

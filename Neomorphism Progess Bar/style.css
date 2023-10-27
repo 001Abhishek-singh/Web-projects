@@ -1,0 +1,42 @@
+/* (29/09/23) In this session we are going to create a progress bar by using the html,css & javascript. */
+.container{
+    background: #e3edf7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill{
+    width: 200px;
+    height: 200px;
+    /* background-color: violet; */
+    position: relative;
+}
+.outer{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+.inner{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 23.7px;
+    /* box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255,0.7), 
+    -0.5px -0.5px 0px rgba(255,255,255,1), 
+    0.5px 0.5px 0px rgba(0,0,0,0.15), 
+    0px 12px 10px -10px rgba(0,0,0,0.05); */
+
+    box-shadow: inset 6px 6px 10px 1px rgba(0,0,0,0.15), inset -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+#number{
+    font-weight: 600;
+    color: #555;
+}

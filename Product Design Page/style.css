@@ -1,0 +1,154 @@
+/* (29/09/23) In this session we will design a product sample by using the html,css & javascript */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #56387822;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.gallery{
+    flex-basis: 37%;
+    background: #241e20;
+    transform: scale(1.08); /* uses to increase the size of gallery div */
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.gallery img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+.details{
+    flex-basis: 53%; /* what is flex-basis */
+    background-color: white;
+    padding: 18px;
+    padding-left: 40px;
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1); /* providing the box-shadow to the gallery and text div*/
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+.details h1{
+    color: #333;
+    font-size: 35px;
+}
+.details h2{
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+}
+.details h3{
+    color: #00d874;
+    margin-bottom: 20px;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.size-select p{
+    width: 70px;
+}
+.size-select input:checked + span{
+    color: red;   /* here we want to change the color of the text when we select the radio button */
+    font-weight: 600;
+}
+.size-select input{
+    display: none; /* here we want to hide the input radio button*/
+}
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.color-select p{
+    width: 75px;
+}
+.color-select span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.color-1{
+    background-color: blue;
+}
+.color-2{
+    background-color: yellow;
+}
+.color-3{
+    background-color: green;
+}
+.color-4{
+    background-color:grey;  /* we are providing the background color to the next of the radio button*/
+}
+.color-select input{
+    display: none;  /* we are hiding the radio button by using the command*/
+}
+.color-select input:checked + span{
+    transform: scale(0.7);  /* here we are providing the shadow color outside the background color circle so that we can create a outline outside the color circle*/
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000; /* transform will reduce the size of the outer color circle*/ 
+}
+.quantity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.quantity-select p{
+    width: 75px;
+}
+.quantity-select input{
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+form button{
+    background-color: #553ff0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 20px;
+    box-shadow: 0 10px 10px rgba(85, 63,240,0.25);
+    cursor: pointer;
+}
+.controls{
+    position: absolute; /* this will provide the position of the new images so that we can change the pictures.*/
+    bottom: 40px;
+    right: 20px;  /*this will show the icon bottom-right of the main image.*/
+}
+.btn{
+    display: block;  /*this will change the pictures of the product*/
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:rgba(255,255,255,0.5);
+    margin:10px;
+    cursor: pointer;
+}
+.btn.active{
+    background-color: #553ff0;
+}

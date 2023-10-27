@@ -1,0 +1,33 @@
+/* (12/09/23) in this session we are going to create a calendar by using the html,css & javascript */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#1d0000,#20205b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar{
+    width: 300px;
+    height: 250px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.left, .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.right{
+    background: #f4351e;
+    color: white;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}

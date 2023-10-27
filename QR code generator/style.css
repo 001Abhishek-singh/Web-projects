@@ -1,0 +1,78 @@
+/* (1/sep/2023) in this session we will try to generate the QR code by using the html,css,javascript */
+body{
+    background: #237987;
+}
+.container{
+    width: 480px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+}
+.container h1{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.container input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #237987;
+    outline: 0;
+    padding: 8px;
+    margin: 20px 0 20px -4px;
+    border-radius: 5px;
+}
+.container button{
+    width: 100%;
+    height: 40px;
+    background: #494eea;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    padding: 8px;
+    margin: 20px 6px 20px;
+    font-weight: 500;
+}
+#ImgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#ImgBox img{
+    width: 100%;
+    padding: 0px;
+}
+#ImgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translate(-2px);
+    }
+    50%{
+        transform: translate(0);
+    }
+    75%{
+        transform: translate(2px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}

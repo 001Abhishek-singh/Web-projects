@@ -1,0 +1,182 @@
+<!-- (07/09/23) in this session we are going to create a web page of veterinary website by using the html,css and bootstrap -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- title -->
+    <title>Veterinary Hospital</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark"  id="for-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo.jpeg" alt="logo" class="img-fluid img-size-value"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item font-size">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item font-size">
+                <a class="nav-link active" aria-current="page" href="#">Login</a>
+              </li>
+              <li class="nav-item font-size">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item font-size">
+                <a class="nav-link active" aria-current="page" href="#">Service</a>
+              </li>
+              <li class="nav-item font-size">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="mysearchform">
+              <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" id="mysearchbox">
+              <button class="btn btn-outline-success" type="submit" id="mysearchbtn"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- container-fluid -->
+      <div class="container-fluid">
+        <!-- banner in row -->
+        <div class="row justify-content-evenly" id="banner">
+            <div class="col-md-6 text-center" id="bannertext">
+                <h2>First i wanted to be <br> a veterinarian</h2>
+                <p>Everybody wants to become a doctor but very few of them selected as a medical student and among those only 0.3% selected as a veterinarian because it is very hard nut to crack for everyone hence they recieve a special status among the society members</p>
+                <button type="button" class="btn" id="btn-select-1">Contact Us</button>
+                <button type="button" class="btn" id="btn-select-2">Our Services</button>
+            </div>
+            <div class="col-md-4 text-center d-none d-md-block" id="bannerimage"><!-- NOTE: 'd-none' is used to hide the element from the device and 'd-md-block' use to show the element above from the range of medium device.-->
+                <img src="newdog.png" alt="dogpicture" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- service in row -->
+        <div class="row justify-content-center">
+          <div class="col-md-5" id="servicetext">
+            <h2>Always protect and care the Animals</h2>
+            <p>We should always be kind and polite toward the animals as well as show the respect toward them because it's essential for all of us to take care those animals who can't able to speak but show huge emotional bonding with us.</p>
+            <button type="button" class="btn" id="servicebutton">Help Desk</button>
+          </div>
+          <div class="col-md-5" id="serviceimage"><img src="doc2.jpeg" class="img-fluid" alt="doctorimg"></div>
+        </div>
+
+        <!-- counter section in row -->
+        <div class="row justify-content-center" id="counter-section">
+          <div class="col-md-3 text-center mycountericon">
+            <i class="bi bi-heart-pulse-fill"></i>
+            <h4>+425359 <br> Patients</h4>
+          </div>
+          <div class="col-md-3 text-center mycountericon">
+            <i class="bi bi-headphones"></i>
+            <h4>+76486 <br> Instruments</h4>
+          </div>
+          <div class="col-md-3 text-center mycountericon">
+            <i class="bi bi-clipboard-plus-fill"></i>
+            <h4>+67854 <br> Surgery</h4>
+          </div>
+        </div>
+
+        <!-- blog in row -->
+        <div class="row" id="blog-section">
+          <div class="col-12 text-center">
+            <h3 id="blog-heading">World's Most Trustable Animal Hospital</h3>
+          <p id="blog-para">Yes you are reading correct this is world's best Hospital for the animals where we provide extreme level of care and health facilities which is more beneficial for all the living beings</p>
+          </div>
+        </div>
+
+        <!-- doctor list & report in row -->
+        <div class="row justify-content-evenly" id="doctorlist">
+          <div class="col-md-3 col-11 pb-4" >
+            <img src="doc1.jpeg" alt="doctor1" class="img-fluid">
+            <div class="for-border-purpose">
+              <h4 class="doctorlist-header">Dermatologist</h4>
+              <p class="doctorlist-date">12 August 2021</p>
+              <p class="doctorlist-title">I am skin specialist who is always ready to cure skin related disease or problem and i really enjoy my profession in every single case.</p>
+              <p class="doctorlist-tag"><a href="#">Read more....</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-11 pb-4">
+            <img src="doc3.jpeg" alt="doctor3" class="img-fluid">
+            <div class="for-border-purpose">
+              <h4 class="doctorlist-header">Physician</h4>
+              <p class="doctorlist-date">12 September 2019</p>
+              <p class="doctorlist-title">I am general physician who is always ready to cure any kind of disease or problem by providing the best suitable medicine for that disease</p>
+              <p class="doctorlist-tag"><a href="#">Read more....</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-11 pb-4">
+            <img src="doc4.jpeg" alt="doctor4" class="img-fluid">
+            <div class="for-border-purpose">
+              <h4 class="doctorlist-header">Surgeon</h4>
+              <p class="doctorlist-date">11 July 2023</p>
+              <p class="doctorlist-title">I am Surgeon who is always ready to do surgeries only if required to perform surgeries acc. to patient disease</p>
+              <p class="doctorlist-tag"><a href="#">Read more....</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer in row -->
+        <div class="row justify-content-evenly" id="footer-section">
+          <div class="col-md-3">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Brand Guidelines</a></li>
+              <li><a href="#">Terms&Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">How to Order</a></li>
+              <li><a href="#">Our Product</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Promo</a></li>
+              <li><a href="#">Payment Method</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-right">
+            <h4>Animals Lover</h4>
+            <h6>Our team working with full enthusiasm</h6>
+            <form action="#" id="footer-form">
+              <input type="text" id="footer-search-box">
+              <button type="submit" id="footer-search-submit"><i class="bi bi-cursor"></i></button>
+            </form>
+            <a href="#"><i class="bi bi-instagram social-media-icon"></i></a>
+            <a href="#"><i class="bi bi-facebook social-media-icon"></i></a>
+            <a href="#"><i class="bi bi-twitter social-media-icon"></i></a>
+            <a href="#"><i class="bi bi-whatsapp social-media-icon"></i></a>
+          </div>
+          <div class="col-md-12 col-11 text-center pt-5">
+            <h6><i class="bi bi-c-circle"></i>2023 Copyright: Kavaagroup.com</h6>
+          </div>
+        </div>
+
+        <!-- container-fluid end -->
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

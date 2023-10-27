@@ -1,0 +1,27 @@
+/* (05/09/23) in this session we will learn about password toggle where we use html,css & javascript. */
+
+body{
+    background: #568243;
+}
+.passtoggle{
+    background: #fff;
+    width: 100%;
+    max-width: 540px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 300px auto;
+    display: flex;
+    align-items: center;
+}
+.passtoggle input{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    font-size: 28px;
+    color: #555;
+}
+.passtoggle img{
+    width: 35px;
+    cursor: pointer;
+}

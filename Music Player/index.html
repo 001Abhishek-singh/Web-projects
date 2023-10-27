@@ -1,0 +1,41 @@
+<!-- (11/10/23) In this session we are going to create a music player by using the html,css & javascript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sheet.js" defer></script>
+    <script src="https://kit.fontawesome.com/f8bfd6fc98.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="first-icon-set">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="first-icon-set">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="rashi.jpeg" class="song-img">
+            <h1>Tujhe Na Dekhu To Chain Mujhe Aata Nahi Hain</h1>
+            <p>sung by : --- Abhishek</p>
+
+            <audio id="song">
+                <source src="Tujhe Na Dekhu To.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-forward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="controlIcon"></i></div>
+                <div><i class="fa-solid fa-backward"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

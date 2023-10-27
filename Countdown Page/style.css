@@ -1,0 +1,75 @@
+/* (10/09/23) In this session we are going to create a countdown page by using the html,css & javascript.*/
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("space.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo{
+    cursor: pointer;
+    width: 120px;
+    padding: 25px 15px ;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);/* learn this because currently we don't know much about that */
+    color: white;
+}
+.content p{
+    font-size: 24px;
+    color: #ea941b;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #ff3753;
+}
+.content button{
+    font-size: medium;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content button img{
+    width: 25px;
+    margin-left: 10px;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: 14px;
+}
+.myrocket{
+    width: 160px;
+    position: absolute;
+    right: 18%;
+    bottom: 0;
+    animation: udjarocket 4s linear infinite; /* learn animation in web development */
+}
+@keyframes udjarocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 100%;
+        opacity: 1;
+    }
+}

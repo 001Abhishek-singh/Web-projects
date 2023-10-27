@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook clone</title>
+    <link rel="stylesheet" href="style.css"><!--connect with the css file-->
+</head>
+<body id="bgcolor">
+    <!--Going to create a navigation bar on the main web page-->
+    <nav>
+        <div class="navleft">
+            <h1><img src="facebook.png" alt="Facebook logo" class="logo"></h1>
+            <ul>
+                <li><img src="notification.png" alt="Notification bar"></li>
+                <li><img src="inbox.png" alt="Inbox"></li>
+                <li><img src="video.jpeg" alt="Video"></li>
+            </ul>
+        </div>
+
+        <div class="navright">
+            <div class="search-box">
+                <input type="text" placeholder="Search" id="forsearch">
+                <input type="Submit" placeholder="Submit" id="forsubmit">
+            </div>
+            <div class="user-profile online">
+                <img src="abhishek.png" alt="profile">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!--we will put the content under the left-sidebar-->
+
+        <div class="left-sidebar">
+            <div class="impo-links">
+                <a href="#"><img src="newsupdate.png" alt="News">Latest news</a>
+                <a href="#"><img src="friends.png" alt="Friends">Friends</a>
+                <a href="#"><img src="group.png" alt="Group">Group</a>
+                <a href="#"><img src="marketplace.png" alt="Marketplace">Marketplace</a>
+                <a href="#"><img src="watch.png" alt="Watch">Watch</a>
+                <a href="#">See more</a>
+            </div>
+            <hr>
+            <div class="shortcut-links">
+                <p>Shortcut links</p>
+                <a href="#"><img src="youtube.png" alt="Youtube">Youtube</a>
+                <a href="#"><img src="linkedin.jpeg" alt="Linkedin">Linkedin</a>
+                <a href="#"><img src="instagram.jpeg" alt="Instagram">Instagram</a>
+                <a href="#"><img src="twitter.png" alt="Twitter">Twitter</a>
+            </div>
+        </div>
+        
+        <!--we will put the content under the main body -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story">
+                    <img src="upload.png" alt="upload">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story1">
+                    <img  src="coding.jpeg" alt="upload">
+                    <p>Dexterous</p>
+                </div>
+                <div class="story story2">
+                    <img src="new-user.png" alt="upload">
+                    <p>Anonymous</p>
+                </div>
+                <div class="story story3">
+                    <img src="gju logo.png" alt="upload">
+                    <p>Gjuians</p>
+                </div>
+                <div class="story story4">
+                    <img src="car.png" alt="upload">
+                    <p>Racer</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="new-post-user-profile">
+                    <img src="abhishek.png" alt="Abhishek">
+                    <p>Abhishek</p>
+                    <small>Public</small>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="5" placeholder="Write your note, Abhishek!"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="live.jpeg" alt="live video">Live video</a>
+                        <a href="#"><img src="imgvideo.jpeg" alt="My gallery">Photo/Video</a>
+                        <a href="#"><img src="myactivity.jpeg" alt="myactivity">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="new-post-user-profile">
+                    <img src="abhishek.png" alt="Abhishek">
+                    <p>Abhishek</p>
+                    <!--<small>Public</small>-->
+                    <span>June 23 2023, 08:34 p.m</span>
+                    <a href="#"><img src="threedot.jpeg" alt="threedot"></a>
+                </div>
+                <div>
+                    <div>
+                        <p class="post-container-post-div">Hello world,i'm abhishek and i am b.tech pursuing student from electrical trade and currently i am in 4th year of b.tech degree.</p>
+                    </div>
+                    <div>
+                        <img src="myfav.jpg" alt="mypicture" class="post-container-post-div-image">
+                    </div>
+                </div>
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like.jpeg" alt="like">234</div>
+                        <div><img src="comment.jpeg" alt="comment">67</div>
+                        <div><img src="share.jpeg" alt="share">71</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--we will put the content under the right-sidebar-->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Connections</h4>
+                <a href="#">Snap</a>
+            </div>
+            <!--Creating the events on the right side of the page....-->
+            <div class="event">
+                <div class="left-event">
+                    <h3>Following</h3>
+                    <span>108</span>
+                    <h3>Followers</h3>
+                    <span>450</span>
+                </div>
+                <div class="right-event">
+                    <h4>Request</h4>
+                    <span>24</span>
+                    <p>Your connection is growing.....</p>
+                </div>
+                <hr>
+
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See All</a>
+                </div>
+                <!--1st event on 6th june-->
+                <div class="next-left-event">
+                    <h3>06</h3>
+                    <span>June</span>
+                </div>
+                <div class="next-right-event">
+                    <h4>Cloning(Web project)</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Kavaa private limited</p>
+                    <a href="#">Contact Info</a>
+                </div>
+                <!--2nd event on 10th june-->
+                <hr id="divider">
+                <div class="new-left-event">
+                    <h3>10</h3>
+                    <span>June</span>
+                </div>
+                <div class="new-right-event">
+                    <h4>Economics(Exam)</h4>
+                    <p><i class="fa-duotone fa-location-dot"></i>Electrical Department</p>
+                    <a href="#">Subject Info</a>
+                </div>
+                <hr id="line">
+                <div class="sidebar-title">
+                    <h4>Advertisment</h4>
+                    <a href="#">Close</a>
+                </div>
+                <img src="new_mac.png" alt="Macbook Air 1" class="right-side-ads">
+
+                <div class="sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide Chat</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="gju logo.png" alt="Member 1">
+                    </div>
+                    <p>Shalini</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="car.png" alt="Member 2">
+                    </div>
+                    <p>Vivek</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="user pic.png" alt="Member 3">
+                    </div>
+                    <p>Avinash</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!--01:52:01-->

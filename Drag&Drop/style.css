@@ -1,0 +1,28 @@
+/* (11/09/23) in this session we are going to create a drop & drag project by using the html,css & javascript */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #0b0423;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left, #right{
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed white;
+}
+.list{
+    background-color: #e91e63;
+    height: 60px;
+    margin: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+.list h3{
+    font-size: 24px;
+    padding-left: 80px;
+}

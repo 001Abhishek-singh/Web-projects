@@ -1,0 +1,44 @@
+/* (17/09/2023) in this session we will create a project of Image Background Changer by using the html,css & javascript. */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3fbff;
+}
+.img-box{
+    width: 55%;
+    margin: auto;
+    line-height: 0; /* it will remove the extra space from the image from all side of the picture */
+    background-image: url(dotted.jpeg);
+    overflow: hidden;
+    position: relative;
+}
+.img-wrap{
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+span{
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+    background: #fff;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+.arrow{
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+#arrowimg{
+    width: 5px;
+}

@@ -1,0 +1,48 @@
+/* (10/09/23) in this session we are going to create a Image scrolling page by using the html,css & javascript. */
+body{
+    background: #191919;
+}
+.gallery{
+    width: 1300px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto; /* this is new so learn it*/
+    grid-gap: 10px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div span img{
+    width: 100%;
+    filter: grayscale(100%);  /* this is new so learn it */
+    transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar{   /* this is new so learn it */
+    display: none;
+}
+.wrap-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15% auto;
+}
+#backbutton{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+    padding-bottom: 160px;
+}
+#forwardbutton{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+    padding-bottom: 160px;
+}
+.gallery div span img:hover{  
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: grayscale(0);  /* new things so learn it*/
+}

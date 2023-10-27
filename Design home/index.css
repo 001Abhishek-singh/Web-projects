@@ -1,0 +1,55 @@
+.homeinterior{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.00)),url("interior.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.navbar{
+    margin: auto;
+    padding: 35px 0;
+    text-align: end;
+    justify-content:space-between;
+    background-color:rgb(252, 241, 227,0.5);
+    height: 12px;
+    backface-visibility: visible;
+}
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin: -15px 20px;
+    background-color: blueviolet;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(35, 77, 90);
+    text-transform: uppercase;
+    background-color:rgb(179, 237, 145);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.maincontent{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    text-align: center;
+    color:white;
+    font-size: large;
+}
+.maincontent p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.forbutton button{
+    border-radius: 16px;
+    width: 120px;
+    height: 25px;
+    background-color:rgb(243, 252, 252,0.5);
+    font-style:normal;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px 8px;
+    border:2px solid;
+    border-color:orangered;
+    color:black;
+}

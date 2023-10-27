@@ -1,0 +1,24 @@
+#img1{
+    height: 650px;
+}
+
+.forfooter{
+    background-color:rgb(52, 50, 50) ;
+    color: white;
+}
+#forblog{
+    text-decoration: none;
+    color: white;
+}
+#fornews{
+    text-decoration: none;
+    color: white;
+}
+#forhelp{
+    text-decoration: none;
+    color: white;
+}
+#forcontact{
+    text-decoration: none;
+    color: white;
+}

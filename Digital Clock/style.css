@@ -1,0 +1,73 @@
+/* (29/09/23) In this session we are going to create a digital clock by using the html,css & javascript */
+.container{
+    background:linear-gradient(45deg,#456439,#349867);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-container{
+    width: 800px;
+    height: 180px;
+    background:linear-gradient(60deg, #768362,#397200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sub-container::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #397200;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: 1;  /* what is a z-index */
+}
+.sub-container::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #768362;
+    border-radius: 50%;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    z-index: 1;  /* what is a z-index */
+}
+.clock{
+    width: 60%;
+    height: 60%;
+    background-color:rgba(140, 161, 181, 0.4) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* backdrop-filter: blur; */ /* what is backdrop-filter please read it */
+}
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: white;
+} 
+.clock span::after{
+    font-size: 18px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%); /* what is transform and we understand from this if we use it here*/
+}
+#Hours::after{
+    content: 'HOURS';
+}
+#Minutes::after{
+    content: 'MINS';
+}
+#Seconds::after{
+    content: 'SECS';
+}

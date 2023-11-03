@@ -1,0 +1,29 @@
+<!-- (03/11/2023) In this session we are going to create a BMI Calculator by using the html,css & javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sheet.js" defer></script>
+</head>
+<body>
+        <div class="Main-container">
+            <h2 class="header">Body Mass Index (BMI) Calculator</h2>
+            <div class="height" id="height">
+                <label for="height" class="class-label" id="height-label">Your Height (cm): </label>
+                <input type="number" class="input-class" id="height-input">
+            </div>
+            <div class="weight" id="weight">
+                <label for="weight" class="class-label" id="weight-label">Your Weight (kg): </label>
+                <input type="number" class="input-class" id="weight-input">
+            </div>
+            <button class="btn" id="btn">Compute BMI</button>
+            <div>
+                <input type="number" class="input-class" id="result-div">
+            </div>
+            <h3 class="fordisplaypurpose">Weight Condition:  <span id="fordisplaypurpose"></span> </h3>
+        </div>
+</body>
+</html>

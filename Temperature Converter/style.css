@@ -1,0 +1,52 @@
+/* (01/11/2023) In this session we are going to create a Temperature Converter by using the html,css & javscript. */
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(135, 104, 151),rgb(103, 146, 152));
+}
+.container{
+    width: 70%;
+    max-width: 650px;
+    min-width: 350px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    font-size: 45px;
+    font-weight: 600;
+}
+.temp-container{
+    padding: 14px;
+    width: 100%;
+}
+.temp-container label{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.temp-container input{
+    width: 30%;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    font-size: 14px;
+    background: rgba(209, 183, 223, 0.9);
+}
+.btn{
+    width: 50%;
+    background: rgba(208,182,220,0.7);
+    border-radius: 5px;
+    padding: 6px;
+    margin: 8px;
+    float: left;
+    font-size: 18px;
+    box-shadow: 3px 6px 9px rgba(255,255,255,0.3);
+}

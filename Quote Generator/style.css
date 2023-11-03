@@ -1,0 +1,47 @@
+/* in this session we are going to create a quote generator by using the html, css & javascript */
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#23857894, #957363);
+}
+.container{
+    width: 90%;
+    box-shadow: 3px 12px 20px rgba(0,0,0,0.3);
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
+    background: rgba(255,255,255,0.4);
+}
+.header{
+    font-size: 40px;
+    font-weight:700;
+}
+.quote-box{
+    font-size: 28px;
+    font-weight: 500;
+}
+.author{
+    font-size: 18px;
+    font-style: italic;
+}
+.btn{
+    padding: 8px;
+    margin: 2px 6px;
+    color: whte;
+    background:rgba(255,255,255,0.2);
+    cursor:pointer;
+    width: 300px;
+    font-size: 15px;
+    border-color: #957363;
+    border-radius: 4px;
+}
+.btn:hover{
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 8px 10px 12px rgba(0,0,0,0.3);
+    transition: all 300ms ease-in-out;
+}

@@ -1,0 +1,41 @@
+<!--  (04/11/23) In this session we are going to create a currency converter by using the html,css & javascript. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sheet.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="header">Currency Converter</h2>
+        <div class="conversion-div-1" id="conversion-div-1">
+            <select id="currency-first">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="INR">INR</option>
+                <option value="JPY">JPY</option>
+                <option value="USD" selected>USD</option>
+            </select>
+            <input type="number" id="worth-first" value="1" min="0"> 
+        </div>
+        <div class="conversion-div-2" id="conversion-div-2">
+            <select id="currency-second">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="INR" selected>INR</option>
+                <option value="JPY">JPY</option>
+                <option value="USD">USD</option>
+            </select>
+            <input type="number" id="worth-second" value="1" min="0" disabled>
+        </div>
+        <p class="exchange-rate" id="exchange-rate">1 USD = 138.5802 JPY</p>
+    </div>
+</body>
+</html>

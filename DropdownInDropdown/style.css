@@ -1,0 +1,62 @@
+/* (05/11/23) In this session we are going to create a dropdown menu by using the html,css & javascript */
+body{
+    background-color: #129797;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 19px;
+}
+.container{
+    background-color: rgb(148, 225, 148);
+    margin-top: -16px;
+    text-align: center;
+}
+.container ul{
+    color: black;
+    list-style: none;
+    display: inline-flex;
+}
+.container ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.container ul li a{
+    text-decoration: none;
+    color: black;
+}
+.active,.container ul li:hover{
+    background-color: #987647;
+    border-radius: 4px;
+}
+.sub-container-1{
+    display: none;
+}
+.container ul li:hover .sub-container-1{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background-color: chartreuse;
+}
+.container ul li:hover .sub-container-1 ul{
+    display: block;
+    margin: 10px;
+}
+.container ul li:hover .sub-container-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    text-align: left;
+}
+.container ul li:hover .sub-container-1 ul li:last-child{
+    border-bottom: none;
+}
+.sub-container-2{
+    display: none;
+}
+.hover-me:hover .sub-container-2{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color:rgb(200, 167, 231);
+}

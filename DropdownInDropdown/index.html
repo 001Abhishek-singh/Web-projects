@@ -1,0 +1,48 @@
+<!-- (05/11/23) In this session we are going to create a dropdown menu by using the html,css & javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sheet.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="active"><a href="#">English</a></li>
+            <li>
+                <a href="#">Maths
+                    <div class="sub-container-1">
+                        <ul>
+                            <li><a href="#">Probability</a></li>
+                                <li class="hover-me">
+                                    <a href="#">Quadratic</a>
+                                        <div class="sub-container-2">
+                                            <ul>
+                                                <li><a href="#">Exercise 1</a></li>
+                                                <li><a href="#">Exercise 2</a></li>
+                                                <li><a href="#">Exercise 3</a></li>
+                                                <li><a href="#">Exercise 4</a></li>
+                                                <li><a href="#">Exercise 5</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                            <li><a href="#">Fourier</a></li>
+                            <li><a href="#">Linear</a></li>
+                            <li><a href="#">Matrix</a></li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li><a href="#">Physics</a></li>
+            <li><a href="#">Chemistry</a></li>
+            <li><a href="#">Biology</a></li>
+            <li><a href="#">Economics</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Sanskrit</a></li>
+        </ul>
+    </div>
+</body>
+</html>

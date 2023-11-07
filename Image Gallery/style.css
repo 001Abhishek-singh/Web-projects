@@ -1,0 +1,41 @@
+/* (07/11/23) In this session we are going to create a Image Gallery by using the html,css & javascript */
+.container{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;   /* what is grid and grid-template-columns read and understand it*/
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+}
+.container img{
+    width: 100%;
+    cursor: pointer;
+}
+.container img:hover{
+    transform: scale(0.8) rotate(-15deg);  /* scale is used to either increase or decrease the image here scale(0.8) decreases the size of the image and rotate(-15deg) uses to rotate the image toward 15degree */
+    border-radius: 20px;
+    box-shadow: 0 32px 7px rgba(68,77,136,0.2);
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.main-container img{
+    width: 90%;
+    max-width: 500px;
+}
+.main-container span{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}

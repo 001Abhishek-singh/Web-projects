@@ -1,0 +1,300 @@
+/* (11/11/2023) In this session we are going to create a Dashboard(for admin panel) by using the html,css & javascript */
+
+/* root variables  --- these are some defined variables which we can use according to our requirements */
+:root{
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-background: linear-gradient(#07ed3126,#08e1f026);
+    
+
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-info-dark);
+}
+html{
+    height:100vh;
+    overflow: hidden;
+}
+.main-container{
+    width: 100%;
+    background: #f4f6f8;
+    height: 99vh;
+    display: grid;
+    /* grid-template-areas: 'aside main right'; */
+    grid-template-columns: 18% 60% 20%;
+    grid-gap: 1%;
+}
+
+/* Top Aside and Top Logo */
+#aside{
+    width: 100%;
+    background:var(--color-background);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+.top-side{
+    width: 100%;
+    /* border: 2px solid black; */
+    /* background-color: #7380ec; */
+    display: flex;
+    align-items: self-start;
+}
+.top-logo{
+    width: 90%;
+    border-radius: 4px;
+    /* border: 4px solid red; */
+    display: flex;
+}
+.top-logo img{
+    width: 135px;
+    border-radius: 20px;
+    padding: 0 6px 0 2px;
+}
+.top-logo h3{
+    /* background-color: yellow; */
+    width: 80px;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    color: var(--color-danger);
+}
+.close-button{
+    font-size: 23px;
+    font-weight: 700;
+    padding: 8px 2px;
+    margin: 3px 0px;
+    background: rgba(165,164,211,0.3);
+}
+
+/* Sidebar Section and Content inside the sidebar section */
+.sidebar-section{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: flex-start; */
+    /* background-color: #9ca5fa; */
+}
+.active{
+    border-radius: 15px;
+    background-color: green;
+}
+.sidebar-section a{
+    text-decoration: none;
+    color: rgb(56, 90, 243);
+    /* background-color: yellow; */
+}
+.sidebar-section a h3{
+    padding: 10.5px 5px;
+    /* background-color: pink; */
+}
+.sidebar-section a h3 span{
+    padding-right: 30px;
+    padding-left: 45px;
+    /* background-color: red; */
+}
+.sidebar-section h3:hover{
+    background-color: #90e3c7;
+    border-radius: 25px;
+    cursor: pointer;
+    color: rgb(20, 252, 252);
+}
+#main{
+    width: 100%;
+    background:pink;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+#right{
+    width: 100%;
+    background:var(--color-background);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+
+/* --------------------   Main Section   -------------------- */
+.DashboardAndDate{
+    border: 2px solid black;
+    background: rgba(165,164,211,0.3);
+    border-radius: 11px;
+    margin-top: -1px;
+    padding: 2px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dashboardId{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 20px;
+    /* margin-left: 80px;
+    margin-top: 6px; */
+}
+.DashboardAndDate input{
+    width: 140px;
+    cursor: pointer;
+}
+.user-activity{
+    /* background-color: yellow; */
+    margin-left: 250px;
+    border: 2px solid black;
+    /* margin-top: -2px; */
+}
+.user-activity h3{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    color:black;
+    cursor: pointer;
+    /* background-color: rgba(243, 245, 247,0.2); */
+}
+.user-activity h4{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    color: black;
+    margin-top: -12px;
+    cursor: pointer;
+    /* background-color: rgba(243, 245, 247,0.2); */
+}
+.statusClass{
+    display: flex;
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 2%;
+    width: 96%;
+    margin: 6px 12px 6px 16px;
+}
+.amount{
+    width: 40%;
+    /* background-color: lightgreen; */
+    border: 2px solid black;
+    border-radius: 12px;
+}
+#spanearning{
+    margin: 14px 10px;
+    /* background-color: violet; */
+}
+#spanearning span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.numberblog{
+    width: 40%;
+    /* background-color: lightgreen; */
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#spanblogging{
+    margin: 14px 10px;
+    /* background-color: violet; */
+}
+#spanblogging span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.storage{
+    width: 40%;
+    /* background-color: lightgreen; */
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#spanstorage{
+    margin: 14px 10px;
+    /* background-color: violet; */
+}
+#spanstorage span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.middle{ 
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ } 
+.left{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0 6px 0 6px;
+    /* background-color: burlywood; */
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+.left h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: red;
+    margin-bottom: 3px;
+}
+.left h1{
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+    margin-top: 2px;
+}
+.progress{
+    display: flex;
+    /* align-content: center; */
+    flex-direction: row;
+    /* background-color: orangered; */
+    padding: 10px;
+}
+.progress svg{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    /* border-radius: 50%; */
+}
+.progress svg circle{
+    fill: none;
+    stroke:var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 160;
+    stroke-dashoffset: 292;
+}
+.progress.amount svg circle{
+    stroke-dashoffset: 0;
+    stroke-dasharray: 200;
+}
+.progress .numberblog svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+.progress .storage svg circle{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    position: absolute;
+    top: 27%;
+    color: black;
+    padding-left: 28px; 
+    /* padding-top: -15px; */
+   /* background-color: blue; */
+}
+small{
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+    padding-left: 16px;
+}
+

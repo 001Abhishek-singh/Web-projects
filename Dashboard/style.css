@@ -39,7 +39,7 @@ html{
     background:var(--color-background);
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .top-side{
     width: 100%;
@@ -74,7 +74,8 @@ html{
     font-weight: 700;
     padding: 8px 2px;
     margin: 3px 0px;
-    background: rgba(165,164,211,0.3);
+    cursor: pointer;
+    /* background: rgba(165,164,211,0.3); */
 }
 
 /* Sidebar Section and Content inside the sidebar section */
@@ -87,7 +88,7 @@ html{
 }
 .active{
     border-radius: 15px;
-    background-color: green;
+    /* background-color: green; */
 }
 .sidebar-section a{
     text-decoration: none;
@@ -104,31 +105,31 @@ html{
     /* background-color: red; */
 }
 .sidebar-section h3:hover{
-    background-color: #90e3c7;
+    /* background-color: #90e3c7; */
     border-radius: 25px;
     cursor: pointer;
     color: rgb(20, 252, 252);
 }
 #main{
     width: 100%;
-    background:pink;
+    background:var(--color-background);
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 #right{
     width: 100%;
     background:var(--color-background);
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 
 /* --------------------   Main Section   -------------------- */
 .DashboardAndDate{
-    border: 2px solid black;
-    background: rgba(165,164,211,0.3);
+    /* border: 2px solid black; */
+    /* background: rgba(165,164,211,0.3); */
     border-radius: 11px;
     margin-top: -1px;
     padding: 2px 8px;
@@ -149,8 +150,14 @@ html{
 }
 .user-activity{
     /* background-color: yellow; */
-    margin-left: 250px;
-    border: 2px solid black;
+    margin-left: 300px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
     /* margin-top: -2px; */
 }
 .user-activity h3{
@@ -159,14 +166,19 @@ html{
     font-weight: 300;
     color:black;
     cursor: pointer;
+    padding: 0 5px;
     /* background-color: rgba(243, 245, 247,0.2); */
 }
-.user-activity h4{
-    font-size: 16px;
+.user-activity img{
+    /* font-size: 16px;
     font-style: italic;
     font-weight: 300;
     color: black;
-    margin-top: -12px;
+    margin-top: -12px; */
+    width: 50px;
+    border-radius: 50%;
+    padding: 0 10px ;
+    /* display: flex; */
     cursor: pointer;
     /* background-color: rgba(243, 245, 247,0.2); */
 }
@@ -298,4 +310,195 @@ small{
     padding-left: 16px;
 }
 
+/* ------------------ Recent orders  ------------------ */
+.main-orders{
+    /* border: 2px solid black; */
+    /* background-color: red; */
+    margin-top: 6px;
+    padding-bottom: 20px;
+}
+.order-header{
+    display: inline-flex;
+    align-items: self-start;
+    /* border: 2px solid black; */
+    /* background-color: aquamarine; */
+    padding: 0px 6px;
+}
+.order-header h2{
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+}
+.order-table{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 12px 24px;
+    padding: 5px 5px;
+}
+.order-table table{
+    width: 100%;
+    /* border: 3px solid black; */
+}
+.order-table th{
+    /* border: 3px solid black; */
+    font-size: 22px;
+    padding: 6px 0 4px 0;
+    margin-bottom: 3px;
+    border-bottom: 1px solid black;
+}
+.order-table td{
+    /* border: 2px solid black; */
+    font-size: 17px;
+    padding: 10px 3px 6px 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+    /* border-radius: 4px; */
+}
+.table-button{
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 6px 10px;
+    margin: 0 8px 0 8px;
+    background-color: rgb(161, 219, 103);
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.table-button:hover{
+    border-radius: 10px;
+    background-color: black;
+    transform: scale(0.3);
+    box-shadow: 6px 6px 8px rgba(132,176,111,0.3);
+    color: white;
+}
+.pending{
+    color: rgb(246, 20, 20);
+    font-size: 19px;
+    cursor: pointer;
+}
+.details{
+    color: green;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 400;
+    cursor: pointer;
+}
 
+
+/* -------------- Starting of Recent Update --------------- */
+.recent-update{
+    /* border: 2px solid black; */
+    /* background-color: rgb(193, 159, 226); */
+    /* padding: 4px 4px 4px 4px; */
+    /* margin-top: -2px; */
+    border: 4px solid #c2e7db;
+    border-radius: 18px;
+}
+.recent-update h3{
+    /* border: 2px solid black; */
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+    padding-left: 6px;
+}
+.user-update{
+    /* border: 2px solid red; */
+    display: grid;
+    margin-top: -15px;
+    border-radius: 6px;
+    /* grid-template-areas: 'img h3'
+    'p p'; */
+}
+.user-update-img-h3{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.user-update-img-h3 img{
+    width: 30px;
+    /* border: 2px solid black; */
+    border-radius: 8px;
+}
+.user-update-img-h3 h3{
+    /* border: 2px solid black; */
+    margin-left: 10px;
+    font-size: 22px;
+    color: red;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+.user-update p{
+    /* border: 2px solid black; */
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 3px 0 3px;
+    margin-top: -11px;
+}
+
+
+/* -------------- sales-analytics ---------------- */
+.sales-analytics{
+    border: 4px solid #c2e7db;
+    border-radius: 18px;
+    /* background-color:#7380ec; */
+    margin-top: 4px;
+}
+.sales-analytics h3{
+    /* border: 2px solid black; */
+    /* font-size: 28px;
+    font-weight: 600; */
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+    padding-left: 6px;
+    margin-bottom: 10px;
+}
+.blog-sale{
+    /* border: 2px solid red; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-areas: 'img small span span';
+    padding: 6px 6px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    /* background-color: #41f1b6; */
+}
+.increament{
+    color: green;
+    font-size: 18px;
+}
+.decreament{
+    color: red;
+    font-size: 18px;
+}
+#blog-sale-id{
+    width: 18px;
+}
+.blog-sale img{
+    width: 28px;
+    border-radius: 50%;
+}
+/* ---------- Add Blog ----------- */
+.add-blog{
+    /* border: 2px solid black; */
+    /* background-color: red; */
+    margin: 8px 0 0 0;
+}
+.new-section{
+    border: 3px dotted black;
+    /* background: darkorchid; */
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+    border-radius: 26px;
+    cursor: pointer;
+}
+.new-section h2{
+    font-size: 22px;
+}
+#add-customer{
+    margin-right: 9px;
+}
